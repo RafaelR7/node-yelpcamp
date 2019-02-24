@@ -51,7 +51,6 @@ app.use('/', indexRoutes);
 app.use('/campgrounds', campgroundRoutes);
 app.use('/campgrounds/:id/comments', commentRoutes);
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number, function() {
-  console.log(`Servers is running, port: ${port_number}`);
+app.listen(3000, function() {
+  console.log('Servers is running');
 });
